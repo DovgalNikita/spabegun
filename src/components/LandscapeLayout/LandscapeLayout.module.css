@@ -1,0 +1,13 @@
+.blockLandscape {
+  position: absolute;
+  width: 600px;
+  height: 550px;
+  right: 12%;
+  top: calc(50% - 200px);
+}
+
+.blockLandscape img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=LandscapeLayout.module.css.map */

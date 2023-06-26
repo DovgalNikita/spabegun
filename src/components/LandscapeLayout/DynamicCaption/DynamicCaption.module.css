@@ -1,0 +1,81 @@
+.blockDynamicCaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: auto;
+  height: 20%;
+}
+
+.blockDynamicCaption > div:nth-child(1) {
+  color: gainsboro;
+  font-size: 20px;
+  text-shadow: 0 0 5px #09ff00;
+  font-family: secondaryFont;
+  opacity: 1;
+  -webkit-animation: title 4s;
+          animation: title 4s;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@-webkit-keyframes title {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes title {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blockDynamicCaption > div:nth-child(2) {
+  width: 2px;
+  background-color: gainsboro;
+  -webkit-animation: line 2s;
+          animation: line 2s;
+  height: 100%;
+}
+
+@-webkit-keyframes line {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes line {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=DynamicCaption.module.css.map */

@@ -1,0 +1,41 @@
+@font-face {
+  font-family: defaultFont;
+  src: url("../../../assets/fonts/DelaGothicOne-Regular.ttf");
+}
+
+.menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 35%;
+  list-style-type: none;
+}
+
+.menu .menu__item {
+  font-family: defaultFont;
+  color: gainsboro;
+  font-size: 15px;
+  position: relative;
+}
+
+.menu .menu__item::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: gainsboro;
+  -webkit-transition: .5s;
+  transition: .5s;
+  bottom: -2px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.menu .menu__item:hover::before {
+  width: 100%;
+}
+/*# sourceMappingURL=NavBar.module.css.map */

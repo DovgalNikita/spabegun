@@ -1,0 +1,159 @@
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contactsPage {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(#002197), to(#0e004b));
+  background: linear-gradient(270deg, #002197 0%, #0e004b 100%);
+}
+
+.contactsPage .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.contactsPage .content .map {
+  position: relative;
+  opacity: 0.9;
+  margin-top: 5%;
+}
+
+.contactsPage .content .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: calc(55% - 175px);
+  right: 10%;
+  width: 600px;
+  height: 350px;
+}
+
+.contactsPage .content .contacts::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  border-top: 5px solid rgba(0, 47, 255, 0.6);
+  border-bottom: 5px solid rgba(0, 47, 255, 0.6);
+  background-color: rgba(238, 238, 238, 0.8);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-animation: openWindow 2s;
+          animation: openWindow 2s;
+}
+
+@-webkit-keyframes openWindow {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes openWindow {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.contactsPage .content .contacts > div {
+  width: 100%;
+  font-family: arial;
+  font-weight: 900;
+  font-size: 15px;
+  color: #2d52fa;
+  opacity: 1;
+  -webkit-animation: transition 4s;
+          animation: transition 4s;
+  margin-left: 50px;
+  z-index: 11;
+}
+
+@-webkit-keyframes transition {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes transition {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.contactsPage .content .contacts > div span {
+  font-family: defaultFont;
+}
+
+.contactsPage .content .contacts .title {
+  font-size: 30px;
+  text-align: center;
+  margin: 5% 0;
+  margin-left: 0;
+}
+
+.contactsPage .content .contacts .information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 150px;
+  width: 100%;
+}
+
+.contactsPage .content .contacts .icons {
+  z-index: 11;
+}
+/*# sourceMappingURL=Contacts.module.css.map */

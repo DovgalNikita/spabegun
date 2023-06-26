@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAA;EACX,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAC,KAAK;EACX,MAAM,EAAC,KAAK;EACZ,KAAK,EAAC,GAAG;EACT,GAAG,EAAC,iBAAiB;CAMxB;;AAXD,AAOI,eAPW,CAOX,GAAG,CAAA;EACC,KAAK,EAAC,IAAI;EACV,MAAM,EAAC,IAAI;CACd",
+    "sources": [
+        "LandscapeLayout.module.scss"
+    ],
+    "names": [],
+    "file": "LandscapeLayout.module.css"
+}

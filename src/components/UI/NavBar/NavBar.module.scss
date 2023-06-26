@@ -1,0 +1,43 @@
+@font-face {
+    font-family: defaultFont;
+    src: url('../../../assets/fonts/DelaGothicOne-Regular.ttf');
+}
+$white:rgb(220,220,220);
+$whiteA:rgba(220,220,220,0.5);
+
+@mixin defaultFont{
+    font-family: defaultFont;
+    color: $white;
+}
+
+.menu{
+    display: inline-flex;
+    justify-content: space-between;
+    width:35%;
+    list-style-type: none;
+
+    .menu__item{
+        @include defaultFont;
+        font-size: 15px;
+        position:relative;
+
+        &::before{
+            content: '';
+            position:absolute;
+            width:0;
+            height:2px;
+            background-color: $white;
+            transition: .5s;
+            bottom:-2px;
+            left:50%;
+            transform: translateX(-50%);
+        }
+
+        &:hover{
+            &::before{
+                width:100%;
+            }
+        }
+    }
+
+}
